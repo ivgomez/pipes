@@ -112,6 +112,17 @@
       <td> capitalized </td>
       <td> {{ nombre2 | capitalizado:false }} </td>
     </tr>
+    <tr>
+      <td> {{ nombre }} </td>
+      <td> constraseña: {{activar}} 
+        <br>
+        <button
+          (click)="activar = !activar"
+          type="button"
+          class="btn btn-outline-primary">Activar / Desactivar</button>
+      </td>
+      <td> {{ nombre | contrasena: activar }} </td>
+    </tr>
 </table>
 
 <h4>Slice</h4>
